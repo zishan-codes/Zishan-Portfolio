@@ -1,0 +1,63 @@
+
+*{
+    background-color: #000000;
+    color: white;
+}
+i{
+    background: none;
+    font-family:'Great Vibes', cursive;
+}
+#zish{
+    background: none;
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%) rotate(-6deg);
+    margin-top: 0px;
+    z-index: 2;
+}
+h1{
+    font-size: 100px;
+    height: 100px;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top: 10px
+}
+.top{
+    text-decoration: none;
+}
+#top{
+    position: relative;
+    z-index: 3;
+    margin-top: 0px;
+    margin-bottom:0px;
+    padding-bottom: 0px;
+}
+#thnx{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#copyright{
+    margin-top: 5px;
+}
+table, th, td{
+    border: 2px solid white;
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 30px;
+    font-size: large;
+    border-radius: 30%;
+}
+table{
+    width: 75%;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+footer{
+    color:white;
+    text-align: center;
+}
