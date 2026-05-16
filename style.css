@@ -36,11 +36,6 @@ h1{
     margin-bottom:0px;
     padding-bottom: 0px;
 }
-#thnx{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: center;
-}
 #copyright{
     margin-top: 5px;
 }
@@ -60,4 +55,24 @@ table{
 footer{
     color:white;
     text-align: center;
+}
+#thnx{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+#fya{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    justify-content: center;
+    font-size: 30px;
+    left: 50%;
+    background: none;
+    transform: translate(-50%) rotate(-4deg);
+    position: absolute;
+    font-family:'Great Vibes', cursive;
+    z-index: 2;
 }
