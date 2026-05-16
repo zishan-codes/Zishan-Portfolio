@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmConnect - AgriTech Platform for Farmers</title>
+    <link rel="stylesheet" href="AgriTech.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="Agritech.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader">
+            <i class="fas fa-seedling"></i>
+            <p>Loading FarmConnect...</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>FarmConnect</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#equipment" class="nav-link">Equipment</a></li>
+                <li><a href="#reels" class="nav-link">Reels</a></li>
+                <li><a href="#marketplace" class="nav-link">Marketplace</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-slide-up">Connect Farmers with Modern Technology</h1>
+            <p class="hero-desc animate-slide-up">Rent equipment, sell crops, learn farming tips and grow your business with FarmConnect</p>
+            <div class="hero-buttons animate-slide-up">
+                <button class="btn btn-primary" onclick="scrollToSection('equipment')">Book Equipment</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('marketplace')">Explore Marketplace</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-tractor hero-icon"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose FarmConnect?</h2>
+            <div class="features-grid">
+                <div class="feature-card animate-fade-in">
+                    <i class="fas fa-tools"></i>
+                    <h3>Equipment Rental</h3>
+                    <p>Rent tractors, harvesters and more at affordable rates</p>
+                </div>
+                <div class="feature-card animate-fade-in">
+                    <i class="fas fa-video"></i>
+                    <h3>Smart Reels</h3>
+                    <p>Learn modern farming techniques through short videos</p>
+                </div>
+                <div class="feature-card animate-fade-in">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Crop Marketplace</h3>
+                    <p>Sell your crops directly to buyers across India</p>
+                </div>
+                <div class="feature-card animate-fade-in">
+                    <i class="fas fa-users"></i>
+                    <h3>Farmer Community</h3>
+                    <p>Connect with other farmers and experts</p>
+                </div>
+                <div class="feature-card animate-fade-in">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Fast Booking</h3>
+                    <p>Book equipment in just 2 clicks</p>
+                </div>
+                <div class="feature-card animate-fade-in">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure Chat</h3>
+                    <p>Safe messaging with equipment owners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Rental Section -->
+    <section id="equipment" class="equipment">
+        <div class="container">
+            <h2 class="section-title">Equipment Rental</h2>
+            <p class="section-subtitle">Book farming equipment from verified owners near you</p>
+            <div class="equipment-grid">
+                <div class="equipment-card animate-slide-up">
+                    <div class="equipment-image">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <div class="equipment-info">
+                        <h3>Tractor</h3>
+                        <div class="price">₹500/hour</div>
+                        <div class="owner">Owner: Ram Singh</div>
+                        <div class="location">Location: Punjab</div>
+                        <button class="btn btn-primary" onclick="showBookingModal('Tractor', 'Ram Singh', 'Punjab', '₹500/hour')">Book Now</button>
+                    </div>
+                </div>
+                <div class="equipment-card animate-slide-up">
+                    <div class="equipment-image">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <div class="equipment-info">
+                        <h3>Harvester</h3>
+                        <div class="price">₹1200/hour</div>
+                        <div class="owner">Owner: Suresh Kumar</div>
+                        <div class="location">Location: Haryana</div>
+                        <button class="btn btn-primary" onclick="showBookingModal('Harvester', 'Suresh Kumar', 'Haryana', '₹1200/hour')">Book Now</button>
+                    </div>
+                </div>
+                <div class="equipment-card animate-slide-up">
+                    <div class="equipment-image">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="equipment-info">
+                        <h3>Seeder</h3>
+                        <div class="price">₹300/hour</div>
+                        <div class="owner">Owner: Rajesh Patel</div>
+                        <div class="location">Location: Maharashtra</div>
+                        <button class="btn btn-primary" onclick="showBookingModal('Seeder', 'Rajesh Patel', 'Maharashtra', '₹300/hour')">Book Now</button>
+                    </div>
+                </div>
+                <div class="equipment-card animate-slide-up">
+                    <div class="equipment-image">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="equipment-info">
+                        <h3>Rotavator</h3>
+                        <div class="price">₹400/hour</div>
+                        <div class="owner">Owner: Anil Verma</div>
+                        <div class="location">Location: UP</div>
+                        <button class="btn btn-primary" onclick="showBookingModal('Rotavator', 'Anil Verma', 'UP', '₹400/hour')">Book Now</button>
+                    </div>
+                </div>
+                <div class="equipment-card animate-slide-up">
+                    <div class="equipment-image">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="equipment-info">
+                        <h3>Water Tanker</h3>
+                        <div class="price">₹250/hour</div>
+                        <div class="owner">Owner: Manoj Yadav</div>
+                        <div class="location">Location: Rajasthan</div>
+                        <button class="btn btn-primary" onclick="showBookingModal('Water Tanker', 'Manoj Yadav', 'Rajasthan', '₹250/hour')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reels Section -->
+    <section id="reels" class="reels">
+        <div class="container">
+            <h2 class="section-title">Learn from Farming Reels</h2>
+            <div class="reels-container">
+                <div class="reel-card active animate-slide-up" data-reel="1">
+                    <div class="reel-video">
+                        <i class="fas fa-play"></i>
+                        <div class="reel-overlay">
+                            <h3>Modern Irrigation</h3>
+                            <p>Drip irrigation saves 60% water</p>
+                        </div>
+                    </div>
+                    <div class="reel-actions">
+                        <button class="like-btn" onclick="toggleLike(this)"><i class="far fa-heart"></i> 1.2K</button>
+                        <button class="share-btn"><i class="fas fa-share"></i></button>
+                    </div>
+                </div>
+                <div class="reel-card animate-slide-up" data-reel="2">
+                    <div class="reel-video">
+                        <i class="fas fa-play"></i>
+                        <div class="reel-overlay">
+                            <h3>Drone Farming</h3>
+                            <p>Monitor crops from sky</p>
+                        </div>
+                    </div>
+                    <div class="reel-actions">
+                        <button class="like-btn" onclick="toggleLike(this)"><i class="far fa-heart"></i> 2.5K</button>
+                        <button class="share-btn"><i class="fas fa-share"></i></button>
+                    </div>
+                </div>
+                <div class="reel-card animate-slide-up" data-reel="3">
+                    <div class="reel-video">
+                        <i class="fas fa-play"></i>
+                        <div class="reel-overlay">
+                            <h3>Organic Farming</h3>
+                            <p>Grow chemical-free crops</p>
+                        </div>
+                    </div>
+                    <div class="reel-actions">
+                        <button class="like-btn" onclick="toggleLike(this)"><i class="far fa-heart"></i> 980</button>
+                        <button class="share-btn"><i class="fas fa-share"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketplace Section -->
+    <section id="marketplace" class="marketplace">
+        <div class="container">
+            <h2 class="section-title">Crop Marketplace</h2>
+            <p class="section-subtitle">Sell your harvest directly to buyers</p>
+            <div class="marketplace-grid">
+                <div class="crop-card animate-slide-up">
+                    <div class="crop-image">
+                        <i class="fas fa-wheat-awn"></i>
+                    </div>
+                    <div class="crop-info">
+                        <h3>Wheat</h3>
+                        <div class="quantity">5000 KG</div>
+                        <div class="price">₹25/kg</div>
+                        <div class="seller">Seller: Gopal Ji</div>
+                        <button class="btn btn-secondary" onclick="contactSeller('Gopal Ji')">Contact Seller</button>
+                    </div>
+                </div>
+                <div class="crop-card animate-slide-up">
+                    <div class="crop-image">
+                        <i class="fas fa-rice"></i>
+                    </div>
+                    <div class="crop-info">
+                        <h3>Rice</h3>
+                        <div class="quantity">3000 KG</div>
+                        <div class="price">₹45/kg</div>
+                        <div class="seller">Seller: Kavita Devi</div>
+                        <button class="btn btn-secondary" onclick="contactSeller('Kavita Devi')">Contact Seller</button>
+                    </div>
+                </div>
+                <div class="crop-card animate-slide-up">
+                    <div class="crop-image">
+                        <i class="fas fa-corn"></i>
+                    </div>
+                    <div class="crop-info">
+                        <h3>Corn</h3>
+                        <div class="quantity">2000 KG</div>
+                        <div class="price">₹20/kg</div>
+                        <div class="seller">Seller: Vikram Singh</div>
+                        <button class="btn btn-secondary" onclick="contactSeller('Vikram Singh')">Contact Seller</button>
+                    </div>
+                </div>
+                <div class="crop-card animate-slide-up">
+                    <div class="crop-image">
+                        <i class="fas fa-carrot"></i>
+                    </div>
+                    <div class="crop-info">
+                        <h3>Vegetables</h3>
+                        <div class="quantity">1000 KG</div>
+                        <div class="price">₹35/kg</div>
+                        <div class="seller">Seller: Sunita Rani</div>
+                        <button class="btn btn-secondary" onclick="contactSeller('Sunita Rani')">Contact Seller</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Messaging Section -->
+    <section class="messaging">
+        <div class="container">
+            <h2 class="section-title">Secure Messaging</h2>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message received">
+                        <p>Hello! Is your tractor available tomorrow?</p>
+                        <span>10:30 AM</span>
+                    </div>
+                    <div class="message sent">
+                        <p>Yes, available from 8 AM. ₹500/hour</p>
+                        <span>10:32 AM</span>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="messageInput" placeholder="Type your message...">
+                    <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">About FarmConnect</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Empowering Farmers with Technology</h3>
+                    <p>FarmConnect bridges the gap between traditional farming and modern technology. We help small farmers access expensive equipment, learn new techniques, and sell their produce at better prices.</p>
+                    <ul>
+                        <li>✅ 10,000+ farmers connected</li>
+                        <li>✅ 500+ equipment owners</li>
+                        <li>✅ 1M+ KG crops sold</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h4>50K+</h4>
+                        <p>Bookings Done</p>
+                    </div>
+                    <div class="stat">
+                        <h4>₹10Cr+</h4>
+                        <p>Crops Sold</p>
+                    </div>
+                    <div class="stat">
+                        <h4>98%</h4>
+                        <p>Success Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-leaf"></i>
+                    <span>FarmConnect</span>
+                    <p>Connecting Farmers with Technology</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#equipment">Equipment</a>
+                    <a href="#marketplace">Marketplace</a>
+                    <a href="#reels">Reels</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FarmConnect. All rights reserved. | Made for Farmers, by Farmers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Booking Confirmation</h2>
+            <div id="bookingDetails"></div>
+            <div class="modal-buttons">
+                <button class="btn btn-primary" onclick="confirmBooking()">Confirm Booking</button>
+                <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Contact Seller</h2>
+            <p id="sellerName"></p>
+            <p>Phone: <span id="sellerPhone">9876543210</span></p>
+            <p>Message them directly or use our chat!</p>
+            <button class="btn btn-primary" onclick="closeModal()">Start Chat</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
