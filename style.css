@@ -12,7 +12,7 @@ i{
     font-size: 50px;
     position: absolute;
     left: 50%;
-    transform: translate(-50%) rotate(-6deg);
+    transform: translate(-50%) rotate(-10deg);
     margin-top: 0px;
     z-index: 2;
 }
