@@ -29,6 +29,9 @@ i{
 .top{
     text-decoration: none;
 }
+.top:hover{
+    border: 2px solid #ffa800;
+}
 #top{
     position: relative;
     z-index: 3;
@@ -37,7 +40,9 @@ i{
     padding-bottom: 0px;
 }
 #copyright{
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 15px;
 }
 table, th, td{
     border: 2px solid white;
@@ -49,8 +54,28 @@ table, th, td{
 }
 table{
     width: 75%;
-    margin-left: 150px;
+    margin-left: 200px;
     margin-bottom: 20px;
+}
+#boxdiv{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+    text-decoration: underline;
+}
+.box-content{
+    position: relative;
+    font-size: 20px;
+    background-color: #ffffff;
 }
 footer{
     color:white;
