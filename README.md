@@ -87,7 +87,7 @@ For privacy and security reasons, sensitive personal information is not publicly
 
 ## 🤝 Connect With Me
 
-💼 LinkedIn: https://www.linkedin.com/in/mohammad-zishan-681959340?utm_source=share_via&utm_content=profile&utm_medium=member_android
+💼 LinkedIn: https://www.linkedin.com/in/mohammad-zishan-681959340
 
 💻 GitHub: https://github.com/zishan-codes
 
